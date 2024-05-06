@@ -7,5 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1bclscrefFByLUAoqAe1WC6mWVe8gnc4H
 """
 
-print("テストが表示できるか試しましょう")
+!pip install streamlit
+import streamlit as st
+
+st.title('テストでございます')
 
