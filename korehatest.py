@@ -12,7 +12,7 @@ user_input = st.number_input('数値を入力してください', value=0)
 result = user_input * 2
 st.write('入力された数値の2倍は:', result)
 
-import matplotlib.pyplot as plt
+import seaborn as sns
 
 # データフレームの表示
 import pandas as pd
