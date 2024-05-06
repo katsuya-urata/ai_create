@@ -12,7 +12,28 @@ user_input = st.number_input('数値を入力してください', value=0)
 result = user_input * 2
 st.write('入力された数値の2倍は:', result)
 
-import seaborn as sns
+import streamlit as st
+
+# ログイン画面のタイトル
+st.title('ログイン')
+
+# ユーザ名とパスワードの入力フィールド
+username = st.text_input('ユーザ名')
+password = st.text_input('パスワード', type='password')
+
+# ログインボタン
+login_button = st.button('ログイン')
+
+# ログインボタンがクリックされた場合の処理
+if login_button:
+    # ここでユーザ名とパスワードの認証を行う
+    # 仮の認証処理: ユーザ名が"admin"で、パスワードが"password"の場合にのみログイン成功とする
+    if username == 'admin' and password == 'password':
+        st.success('ログインに成功しました！')
+    else:
+        st.error('ユーザ名またはパスワードが正しくありません。')
+
+
 
 # データフレームの表示
 import pandas as pd
